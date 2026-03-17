@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JWT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-5">
+    <div class="container bg-white p-4 rounded shadow-sm" style="max-width: 500px;">
+        <h3>Login Universitario</h3>
+        <input type="email" id="email" class="form-control mb-2" placeholder="estudiante@u.edu" value="estudiante@u.edu">
+        <input type="password" id="pass" class="form-control mb-2" placeholder="Contraseña" value="123">
+        <button onclick="login()" class="btn btn-primary w-100">Obtener Token</button>
+        
+        <hr>
+        
+        <button onclick="obtenerDatos()" class="btn btn-success w-100 mb-2">Acceder a Datos Protegidos</button>
+        <div id="resultado" class="p-3 bg-light border rounded small mt-2">Esperando acción...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
