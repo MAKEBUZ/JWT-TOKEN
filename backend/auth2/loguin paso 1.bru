@@ -1,0 +1,23 @@
+meta {
+  name: loguin paso 1
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/login-paso1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email":"daom3456@gmail.com",
+    "password": "123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
